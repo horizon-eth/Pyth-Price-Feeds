@@ -1,0 +1,26 @@
+{
+  "name": "pyth-oracle-price-feeds",
+  "version": "1.0.0",
+  "main": "index",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "pyth",
+    "oracle",
+    "price",
+    "feeds",
+    "defi",
+    "dex",
+    "ethereum",
+    "blockchain",
+    "liquidity pool"
+  ],
+  "author": "horizon-eth",
+  "license": "ISC",
+  "description": "price fetcher from pyth oracle price feeds",
+  "dependencies": {
+    "@pythnetwork/price-service-client": "^1.9.0"
+  }
+}

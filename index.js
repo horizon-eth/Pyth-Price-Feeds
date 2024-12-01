@@ -18,7 +18,7 @@ async function Pyth() {
 
 			marketPricesPyth[symbol] = price;
 
-			// console.log(`Symbol: ${symbol} -- ID: ${tokenToId[symbol]} -- Price: ${price}$`);
+			// console.log(`Symbol: ${symbol} -- ID: ${tokenToId[symbol]} -- Price: ${price}$`); // you can uncomment for debugging | test purposes
 		}
 
 		fs.writeFileSync(path.join("./prices.json"), JSON.stringify(marketPricesPyth, null, 2));
@@ -27,4 +27,4 @@ async function Pyth() {
 	}
 }
 
-Pyth();
+Pyth().then(setInterval(Pyth, 250));
